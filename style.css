@@ -1,54 +1,48 @@
+/* in case I didn't tell you yet - use this whenever you do anything */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* 
+
+This task should help you check what you remember from the course.
+
+In this task you just have to recreate what you see in the picture.
+Some rules:
+1. You can (and should) modify the HTML file, but 
+   you are only allowed to add on div tag and some classes. 
+2. The whole thing is 960px wide. That's how it has to be ;)
+3. All the spacing has to stay the same
+4. It obviously has to be in the center on any size of the screen
+
+*/
+
 body {
-    font-family: sans-serif;
-    background: transparent url("http://www.psdgraphics.com/file/abstract-silk-background.jpg") no-repeat center;
-    background-size: cover
-    font-size: 3px;
+	color: blue;
+    background:black!important;
+
 }
 
+.wrapper>*{
+    border:1px dashed yellow:
+        
+}
 .wrapper{
-    
-    
-    width: 960px;
-    margin: 0 auto;
-    overflow:auto;
+    width:960px;
+    margin:0 auto;
 }
 
-.menu{
-    
-    width:400px;
-    float: center;
-    
+.wrapper>div{
+    border-radius:50%;
+    background:#abcdef;
+    overflow:hidden;
+    margin-top:38px;
+    width:300px;
+    float:left;
 }
-.menu>ul{
-    padding:0;
-}
-.menu>ul>li{
-    list-style-type: none;
-}
-.menu>ul>li>a{
-display: block;
-    border: 1px solid red;
-    padding: 20px;
-    margin:3px;
-    text-align: center;
-    color: mediumvioletred;
-    font-size: 14px;
+.middle{
+    margin-left:30px;
+    margin-right:30px;
 }
 
-
-.catface{
-    background: transparent url("http://www.organicfacts.net/wp-content/uploads/2013/05/watermelon2.jpg") no-repeat center;
-    height: 350px;
-
+fotter{
+    clear:both;
 }
-
-.content{
-    padding: 100
-        px;
-    margin-left: 100px;
-
-}
-
-
-
-
