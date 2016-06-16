@@ -1,48 +1,81 @@
-/* in case I didn't tell you yet - use this whenever you do anything */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+@charset "utf-8"; 
+html { color:#000; font-family:"微软雅黑";}
+body {font-size: 12px}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td { margin:0; padding:0;}
+table {} 
+fieldset, img { border:0; }
+address, caption, cite, code, dfn, strong, th, var, optgroup { font-style:inherit; font-weight:inherit; }
+em{ font-style:normal;}
+b,strong{ font-weight:bold;}
+del, ins { 111111-decoration:none; }
+li { list-style:none; }
+caption, th { 2222-align:left; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal; }
+q:before, q:after { content:''; }
+abbr, acronym { border:0; font-variant:normal; }
+sup { vertical-align:baseline; }
+sub { vertical-align:baseline; }
+legend { color:#000; }
+/*input, button, textarea { font-family:inherit; font-size:inherit; font-style:inherit; font-weight:inherit; }*/
+input, button, textarea, select { *font-size:100%; }
+a,a:visited{color: #333; 11111-decoration:none; outline:none; blr:expression(this.onFocus=this.blur());}
+a:hover {color:#c00;}
+textarea{ resize:none; } 
 
-/* 
+body{ background:url(../images/header_bg.jpg) repeat-x center top; font-family:Arial;}
+.container{ width:960px; margin:0 auto;}
 
-This task should help you check what you remember from the course.
+.header{ height:175px; margin-bottom:20px;}
+.header img{ display:block;} 
+.header ul{ height:50px; line-height:50px;}
+.header ul li{ float:left;}
+.header ul li a{ color:#fff; padding:0 10px;}
+.header p{line-height:50px; height:50px; background-color:#1d7dff; color:#fff; font-size:14px;}
+.header p a{ color:#fff; padding:0 10px;}
 
-In this task you just have to recreate what you see in the picture.
-Some rules:
-1. You can (and should) modify the HTML file, but 
-   you are only allowed to add on div tag and some classes. 
-2. The whole thing is 960px wide. That's how it has to be ;)
-3. All the spacing has to stay the same
-4. It obviously has to be in the center on any size of the screen
-
-*/
-
-body {
-	color: blue;
-    background:black!important;
-
+.banner{ width:960px; height:303px; margin:0px auto 20px;position:relative;}
+.banner .bd{ position:relative; z-index:0;  }
+.banner .bd ul{ width:100% !important; }
+.banner .bd li{ width:100% !important;  height:382px; }
+.banner .bd li .siteWidth{ width:960px; position:relative;  margin:0 auto;  }
+.banner .bd li a{ height:303px; display:block;  }
+.banner .bd .txt{ position:absolute; width:415px; top:100px; left:22px;   font:normal 18px/30px "Microsoft YaHei";    }
+.banner .bd .btn{ display:block; zoom:1; margin-top:8px;  width:72px; padding-right:10px;  height:31px; line-height:31px; text-align:center; color:#fff; font-size:12px; background:url(images/banner-btn.png) 0 0 no-repeat;
+_background:url(images/banner-btn-ie6.png) 0 0 no-repeat;
 }
+.banner .hd{ width:120px;position:absolute; z-index:1; bottom:16px; right:0px; height:13px;}
+.banner .hd ul li{ cursor:pointer; display:inline-block; *display:inline; zoom:1; text-align:center; width:21px; height:7px; margin:3px; overflow:hidden; background:#fff; line-height:9999;}
+.banner .hd ul .on{ filter:alpha(opacity=100);opacity:1; background:#1d7dff;}
 
-.wrapper>*{
-    border:1px dashed yellow:
-        
-}
-.wrapper{
-    width:960px;
-    margin:0 auto;
-}
 
-.wrapper>div{
-    border-radius:50%;
-    background:#abcdef;
-    overflow:hidden;
-    margin-top:38px;
-    width:300px;
-    float:left;
-}
-.middle{
-    margin-left:30px;
-    margin-right:30px;
-}
 
-fotter{
-    clear:both;
-}
+.content{ width:960px; height:420px;margin-bottom:20px;}
+.leftbar{}
+.rightbar{}
+.content ul{}
+.content ul li{ float:left; width:316px; margin-left:4px; display:inline;}
+.content ul li img{ display:block;}
+.content ul li p{ line-height:24px; height:106px;}
+.content ul li p strong{ display: block; line-height:34px; 333333-align:center; font-size:14px;}
+.content ul li p strong a{ color:#28292b;}
+.content ul li p a{ color:#1d7dff;}
+.content ul li span{ display:block; text-align:right; }
+.content ul li span a{color:#ef0000; font-weight:bold;}
+
+
+.footer{ color:#fff; line-height:30px; height:30px; background-color:#1d7dff; text-align:center;}
+
+.con{ width:940px; padding:10px; border:1px solid #000; margin-bottom:20px;}
+.p_tit{ line-height:40px; text-align:center;}
+.p_tit strong{ font-size:18px; display:block; border-bottom:1px dashed #000;}
+.con_div{ padding:20px;}
+.con_div p{ line-height:24px;}
+.con_div img{ display:block;}
+.a_back{ float:right; font-size:14px;}
+
+.p_tit1{ width:90px; height:42px; line-height:42px; 123123123123-align:center; color:#fff;background-color:#1d7dff; margin-bottom:20px;}
+.con{}
+.con p{ line-height:24px; 123123123123123-indent:2em; margin-bottom:10px;}
+.con img{ display:block; margin:20px auto;}
+
+
